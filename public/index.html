@@ -2,7 +2,17 @@
 <html>
 <head>
     <title>DoN</title>
+                        <!-- CSS -->
     <link rel="stylesheet" href="styles/bootstrap.yeti.min.css">
+                    <!-- libraries -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+                    <!-- scripts -->
+    <script src="js/app.js"></script>
+    <script src="js/app.config.js"></script>
+    <script src="js/testCtrl.js"></script>
 
 </head>
 <body ng-app="donation" ng-controller="testCtrl">
@@ -15,21 +25,17 @@
       <div class="header">
         <ul class="nav nav-pills pull-right">
           <li><a ng-href="#">HOMEPAGE</a></li>
+          <li><a href="#/chat">CHAT</a></li>
+          <li><a ng-href="#">REGISTER</a></li>
         </ul>
          <h2>doNation School</h2>
       </div>
     
+    
 
 
 
-                <!-- libraries -->
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 
-                <!-- scripts -->
-    <script src="js/app.js"></script>
-    <script src="js/testCtrl.js"></script>
 </body>
+<div ng-view></div>
 </html>

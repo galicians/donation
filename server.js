@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 
 app.set('port', process.env.PORT || 5000);
 app.engine('html', require('ejs').renderFile);
-app.set('views', __dirname + '/public');
+app.set('views', __dirname + '/public/partials');
 app.set('view engine', 'html');
 app.use(express.static(path.join(__dirname + '/public')));
 
