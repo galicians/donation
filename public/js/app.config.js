@@ -1,9 +1,20 @@
 angular.module('donation').config(["$routeProvider", function($routeProvider) {
     
-    $routeProvider.
-    when('/chat', {
+    $routeProvider
+
+    .when('/main', {
+        templateUrl: 'partials/main.html'
+    })
+    
+    .when('/chat', {
         templateUrl: 'partials/chat.html'
-    }).otherwise({
+    })
+
+    .when('/register', {
+        templateUrl: 'partials/register.html'
+    })
+
+    .otherwise({
         redirectTo: '/'
     })
 
