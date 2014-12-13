@@ -1,19 +1,35 @@
 
 <html>
 <head>
-<title>DoN</title>
+    <title>DoN</title>
+    <link rel="stylesheet" href="styles/bootstrap.yeti.min.css">
+
 </head>
 <body ng-app="donation" ng-controller="testCtrl">
 
-<h1>do nation</h1>
-{{test}}
-    <!-- libraries -->
-<script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+   
+    {{ test }}
 
-    <!-- scripts -->
-<script src="js/app.js"></script>
-<script src="js/testCtrl.js"></script>
+
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li><a ng-href="#">HOMEPAGE</a></li>
+        </ul>
+         <h2>doNation School</h2>
+      </div>
+    
+
+
+
+                <!-- libraries -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+                <!-- scripts -->
+    <script src="js/app.js"></script>
+    <script src="js/testCtrl.js"></script>
 </body>
 </html>

@@ -1,1 +1,1 @@
-angular.module('donation',[]);
+angular.module('donation',['ngRoute']);
