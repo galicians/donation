@@ -60,7 +60,16 @@ app.post('/newuser', function(req, res) {
      username: user.username,
      password: user.password,
      chats: user.chats
-                      })
+  })
+});
+
+app.post('/newfriend', function(req, res) {
+  console.log(req.body)
+  var friend = req.body;
+  Relationship.create({ 
+     userid: friend.userid,
+     friendid: friend.id
+  })
 });
 
 app.get('/allusers', function(req, res) {
@@ -69,8 +78,11 @@ app.get('/allusers', function(req, res) {
   });
 });
 
-
-
+app.get('/friends', function(req, res) {
+  Relationship.all().complete(function(err, relationships) {
+    res.send(relationships);
+  });
+});
 
         // server & sequelize start
 sequelize.sync().then(function() {
