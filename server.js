@@ -28,8 +28,10 @@ else {
       port: 5432
   });
 }
-
+  
+  //to delete, just needed for development
 sequelize.query("SELECT * FROM USERS").success(function(myTableRows) {
+  console.log('==========')
   console.log(myTableRows)
 })
 
@@ -44,20 +46,6 @@ var User = sequelize.define('user', {
     userid: Sequelize.INTEGER,
     friendid: Sequelize.INTEGER
   });
-
-
-
-
-          // sequelize.sync();
-sequelize
-  .sync({ force: true })
-  .complete(function(err) {
-     if (!!err) {
-       console.log('An error occurred while creating the table:', err)
-     } else {
-       console.log('It worked!')
-     }
-  })
 
             // routes
 app.get('/', function(req, res) {
@@ -75,11 +63,11 @@ app.post('/newuser', function(req, res) {
                       })
 });
 
-
-
-        // server 
-server.listen(app.get('port'), function() {
+        // server & sequelize start
+sequelize.sync().then(function() {
+  server.listen(app.get('port'), function() {
     console.log('Express server listening on port, ', app.get('port'))
+  });
 });
 
 
