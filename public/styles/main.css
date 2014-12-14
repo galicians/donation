@@ -31,3 +31,10 @@ form button {
 }
 #messages li:nth-child(odd) { 
     background: #eee; }
+    
+#chats {
+    display:inline-block;
+    width:300px; 
+    float:right;
+    margin-top:50pxl
+}

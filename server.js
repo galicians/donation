@@ -63,13 +63,21 @@ app.post('/newuser', function(req, res) {
                       })
 });
 
+app.get('/allusers', function(req, res) {
+  User.all().complete(function(err, users) {
+    res.send(users);
+  });
+});
+
+
+
+
         // server & sequelize start
 sequelize.sync().then(function() {
   server.listen(app.get('port'), function() {
     console.log('Express server listening on port, ', app.get('port'))
   });
 });
-
 
             // socket.io server side
 io.on('connection', function(socket) {

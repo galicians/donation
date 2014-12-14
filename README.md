@@ -5,6 +5,9 @@
 <h4>Angular</h4>
 
 <h4>Postgress</h4>
+
+psql -c 'create database doNation;' -U username
+
 <h4>Sequelize</h4>
 Sequelize is a promise-based Node.js ORM for Postgres, MySQL, SQLite and MariaDB. It features solid transaction support, relations, read replication and more.
 
