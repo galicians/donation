@@ -8,7 +8,7 @@ angular.module('donation').config(["$routeProvider", function($routeProvider) {
     
     .when('/chat', {
         templateUrl: 'partials/chat.html', 
-        controller: 'chatSocket'
+        controller: 'chatCtrl'
     })
 
     .when('/register', {

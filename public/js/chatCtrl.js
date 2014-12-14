@@ -1,5 +1,5 @@
  
-angular.module('donation').controller('chatSocket',function($scope) {
+angular.module('donation').controller('chatCtrl',function($scope) {
     var socket = io();
 
      $('form').submit(function(){
