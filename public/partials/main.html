@@ -1,6 +1,7 @@
 <h3 align="center">doNation main Area</h3>
 
-
+<div class="container">
+<div id="friends">
 <ul class="thumbnails">
     <li ng-repeat="user in users">
         <h5>Friend's of {{user.name}}</h5>
@@ -12,3 +13,12 @@
          </ul>
     </li>
 </ul>
+<div>
+<div id="chats">
+<ul class="thumbnails">
+    <li ng-repeat="user in users">
+        <h5>Chats of {{user.name}}</h5>
+        {{user.chats}}
+</ul>
+</div>
+</div>
