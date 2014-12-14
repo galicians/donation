@@ -27,6 +27,7 @@ server.listen(app.get('port'), function() {
 });
 
 
+            // socket.io server side
 io.on('connection', function(socket) {
   
   console.log('a user connected');
