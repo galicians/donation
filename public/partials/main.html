@@ -1,3 +1,14 @@
-<h3>Welcome to the doNation main Area</h3>
+<h3 align="center">doNation main Area</h3>
 
-{{users}}
+
+<ul class="thumbnails">
+    <li ng-repeat="user in users">
+        <h5>Friend's of {{user.name}}</h5>
+        {{user.friends.name}}
+        <ul class="thumbnails">
+         <li ng-repeat="friend in user.friends">
+            {{friend.name}}
+         </li>
+         </ul>
+    </li>
+</ul>

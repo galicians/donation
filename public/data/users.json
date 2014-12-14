@@ -26,7 +26,7 @@
             "name": "Pablo"
         },
         {
-            "name": "rambo"
+            "name": "Jhon Smith"
         }
      ],
      "chats":[3,4],
@@ -36,11 +36,11 @@
   {
      "id": 3,
      "name":"Jhon Smith",
-     "username":"rambo",
+     "username":"Jhon",
      "password":"secret",
      "friends":[
         {
-            "name": "Martin"
+            "name": "Martin Warne"
         }
      ],
      "chats":[4,5],
