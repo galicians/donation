@@ -1,7 +1,7 @@
 angular.module('donation').controller('usersCtrl', function($scope,$http){
 
      var getUsers = function() {
-        return $http.get("http://localhost:5000/allusers").then(function(response) {
+        return $http.get("https://donationapp.herokuapp.com/allusers").then(function(response) {
             $scope.users = response.data;
             console.log($scope.users)
             return response;
@@ -9,7 +9,7 @@ angular.module('donation').controller('usersCtrl', function($scope,$http){
     }
 
      var getFriends = function() {
-        return $http.get("http://localhost:5000/friends").then(function(response) {
+        return $http.get("https://donationapp.herokuapp.com/friends").then(function(response) {
             $scope.relationships = response.data;
             console.log('relationships', $scope.relationships)
             $scope.relationships.forEach( function(element) {
