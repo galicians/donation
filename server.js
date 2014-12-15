@@ -17,7 +17,9 @@ app.set('view engine', 'html');
 app.use(express.static(path.join(__dirname + '/public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-
+console.log('==========');
+console.log('env',process.env);
+console.log('env',process.env.DATABASE_URL);
           // database connection-sequelize
 if (env === 'production') {
   var sequelize = new Sequelize(process.env.DATABASE_URL);
