@@ -18,8 +18,8 @@ app.use(express.static(path.join(__dirname + '/public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 console.log('==========');
-console.log('env',process.env);
-console.log('env',process.env.DATABASE_URL);
+console.log('process.env.DATABASE_URL',process.env.DATABASE_URL);
+console.log('HEROKU_POSTGRESQL_ORANGE_URL',HEROKU_POSTGRESQL_ORANGE_URL);
           // database connection-sequelize
 if (env === 'production') {
   var sequelize = new Sequelize(HEROKU_POSTGRESQL_ORANGE_URL);
