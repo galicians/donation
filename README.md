@@ -10,7 +10,7 @@
         5. node server.js
         6. go to http://localhost:5000
 
-<h3>Stack:</h3>
+<h3>App overview and Stack used:</h3>
 
 <h4>Angular & Bootstrap</h4>
 
