@@ -29,12 +29,6 @@ else {
   });
 }
   
-  //to delete, just needed for development
-sequelize.query("SELECT * FROM USERS").success(function(myTableRows) {
-  console.log('==========')
-  console.log(myTableRows)
-})
-
 var User = sequelize.define('user', {
   name: Sequelize.STRING,
   username: Sequelize.STRING,

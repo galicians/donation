@@ -16,5 +16,13 @@
     "sequelize": "^2.0.0-rc3",
     "sequelize-cli": "^0.3.3",
     "socket.io": "^1.2.1"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "postinstall" : "bower install",
+    "prestart": "npm install --production"
   }
 }
