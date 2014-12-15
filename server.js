@@ -22,7 +22,9 @@ console.log('process.env.DATABASE_URL',process.env.DATABASE_URL);
 
           // database connection-sequelize
 if (env === 'production') {
-  var sequelize = new Sequelize(process.env.DATABASE_URL);
+  var sequelize = new Sequelize(process.env.DATABASE_URL, {
+      dialect: "postgres"
+  });
 }
 else {
   var sequelize = new Sequelize('donation', process.env.USER, process.env.DB_PASSWORD, {
