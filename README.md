@@ -54,5 +54,7 @@ http://sequelizejs.com/articles/express
         Some css inline needs to be moved to main.css
         General improve of the front end style
 
+- Routing in controller using env variable
+
 
 
