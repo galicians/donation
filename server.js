@@ -19,10 +19,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 console.log('==========');
 console.log('process.env.DATABASE_URL',process.env.DATABASE_URL);
-console.log('HEROKU_POSTGRESQL_ORANGE_URL',HEROKU_POSTGRESQL_ORANGE_URL);
+
           // database connection-sequelize
 if (env === 'production') {
-  var sequelize = new Sequelize(HEROKU_POSTGRESQL_ORANGE_URL);
+  var sequelize = new Sequelize(process.env.DATABASE_URL);
 }
 else {
   var sequelize = new Sequelize('donation', process.env.USER, process.env.DB_PASSWORD, {
