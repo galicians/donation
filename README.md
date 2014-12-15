@@ -1,5 +1,15 @@
 <h2>doNation test</h2>
 
+
+<h5>To install this app on your local machine, just follow the steps below:</h5>
+
+        1. git clone https://github.com/galicians/donation
+        2. npm install
+        3. bower install
+        4. create database from command line: psql -c 'create database doNation;' -U username
+        5. node server.js
+        6. go to http://localhost:5000
+
 <h3>Stack:</h3>
 
 <h4>Angular & Bootstrap</h4>
@@ -43,12 +53,5 @@ http://sequelizejs.com/articles/express
         Some css inline needs to be moved to main.css
         General improve of the front end style
 
-<h3>To install this app on your local machine, just follow the steps below:
-    
-        1. git clone https://github.com/galicians/donation
-        2. npm install
-        3. bower install
-        4. create database from command line: psql -c 'create database doNation;' -U username
-        5. node server.js
-        6. go to http://localhost:5000
+
 
