@@ -22,7 +22,7 @@ console.log('env',process.env);
 console.log('env',process.env.DATABASE_URL);
           // database connection-sequelize
 if (env === 'production') {
-  var sequelize = new Sequelize(process.env.DATABASE_URL);
+  var sequelize = new Sequelize(HEROKU_POSTGRESQL_ORANGE_URL);
 }
 else {
   var sequelize = new Sequelize('donation', process.env.USER, process.env.DB_PASSWORD, {
