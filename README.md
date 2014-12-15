@@ -1,5 +1,6 @@
 <h2>doNation test</h2>
 
+In case you want to see the app online please visit: https://donationapp.herokuapp.com/
 
 <h5>To install this app on your local machine, just follow the steps below:</h5>
 
